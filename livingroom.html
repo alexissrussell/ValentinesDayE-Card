@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Alexis Valentines E-Card</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css" />
+</head>
+
+<body>
+
+    <div id="bg"><img src="livingroom.svg"> </div>
+
+    <div id="shade"></div>
+    <div class='cards'>
+        <input type="checkbox" id="card-toggle-2" class="card-toggle" value="selected">
+        <label class='card' for="card-toggle-2">
+            <div class='front face'>
+                <img src='frontcard.svg' ; />
+            </div>
+            <div class="inner-left face">
+                <img src='leftcard.svg' />
+            </div>
+            <div class="inner-right face">
+                <img src='rightcard.svg' />
+            </div>
+        </label>
+    </div>
+     
+      
+    <div id="rug"><img src="rug.svg"></div>
+    <div id="petals"> <img src="petals.svg"></div>
+    <div id="exit"><img src="exit.svg"></div>
+    <div id="lightOn" class="clickit"></div>
+    <audio id="sounds"></audio>
+
+    <script>
+        var lightOn = document.getElementById("lightOn")
+        var sounds = document.getElementById("sounds")
+        var switchs = "switch.mp3"
+
+        lightOn.addEventListener("click", function () {
+            console.log("light off clicked");
+            this.classList.toggle("clickit");
+            shade.style.display = "none";
+            sounds.src = switchs;
+            sounds.play();
+        });
+
+
+        var petal = document.getElementById("petals")
+        var num = 0;
+        
+        petal.addEventListener("click", function () {
+            console.log("petals clicked on");
+            
+       var answer = prompt("What is the average number of wedding proposals each Valentines Day?")
+            if(answer == 220000) {
+                alert("You are correct! Welcome to the secret bedroom!")
+                window.open("bedroom.html","_self") 
+            } else {
+                alert("You are WRONG, go learn more about Valentines Day!")
+            }
+        
+        });
+        
+
+        var exit = document.getElementById("exit")
+
+        exit.addEventListener("click", function () {
+            console.log("exit clicked");
+            window.open("index.html","_self");
+        });
+        
+        
+        var rug = document.getElementById("rug")
+        
+        rug.addEventListener("click", function(){
+            console.log ("rug was clicked");
+            petals.style.animation = "rugmove 2s forwards";
+            petal.style.zIndex = "1";
+        });
+        
+        
+    </script>
+</body>
+
+</html>

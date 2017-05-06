@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300'); 
+
+* {
+     margin: 0;
+     padding: 0;
+     animation: fadein 1s;
+ }
+ 
+ @keyframes fadein {
+     from {
+         opacity: 0;
+         background-color: rgba("0,0,0,.5");
+     }
+     to {
+         opacity: 1;
+         background-color: rgba("0,0,0,.5");
+     }
+ }
+ 
+ #bg {
+     position: absolute;
+     width: 1300px;
+ }
+
+#house {
+     width: 280px;
+     position: absolute;
+     top: 169px;
+     left: 795px;
+     cursor: pointer;
+     z-index: 1;
+ }
+
+#hint{
+    position: absolute;
+    top: 0px;
+    left: 1210px;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+ 
+ @keyframes heartbeat {
+     0% {
+         transform: scale(.75);
+     }
+     20% {
+         transform: scale(.90);
+     }
+     40% {
+         transform: scale( .75);
+     }
+     60% {
+         transform: scale( .90);
+     }
+     80% {
+         transform: scale( .75);
+     }
+     100% {
+         transform: scale( .75);
+     }
+ }
+
+
+    #bird{
+        position: absolute;
+        top: 189px;
+        left: 1210px;
+        cursor: pointer;
+        width: 50px;
+        z-index: 1;
+    }
+
+@keyframes birdmove {
+    from{
+        top:189px;
+        left: 1210px;
+    }
+    to{
+        top: 442px;
+        left: 300px;
+        transform:scale(2);
+    }
+}
+
+ #heart {
+     width: 100px;
+     position: absolute;
+     left: 390px;
+     top: 830px;
+     animation: heartbeat 4s infinite ease-in-out;
+     cursor: pointer;
+     z-index: 1;
+
+ }
+
+#bear{
+    width: 130px;
+    position: absolute;
+    left: 700px;
+    top: 280px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+ 
+ #heart1 {
+     width: 100px;
+     position: absolute;
+     left: 490px;
+     top: 830px;
+     animation: heartbeat 4s infinite ease-in-out;
+     cursor: pointer;
+     z-index: 1;
+ }
+
+#rose{
+    width: 65px;
+    position: absolute;
+    left: 90px;
+    top: 380px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+
+ 
+ #heart2 {
+     width: 100px;
+     position: absolute;
+     left: 590px;
+     top: 830px;
+     animation: heartbeat 4s infinite ease-in-out;
+     cursor: pointer;
+     font-size: 0pt;
+     z-index: 1;
+ }
+
+#dog{
+    width: 230px;
+    position: absolute;
+    left: 800px;
+    top: 550px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+
+ 
+ #heart3 {
+     width: 100px;
+     position: absolute;
+     left: 690px;
+     top: 830px;
+     animation: heartbeat 4s infinite ease-in-out;
+     cursor: pointer;
+     z-index: 1;
+ }
+
+ #choco{
+    width: 130px;
+    position: absolute;
+    left: 500px;
+    top: 420px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+     
+    
+}
+ 
+ 
+ #cloud {
+     background-repeat: no-repeat;
+     position: absolute;
+     width: 300px;
+     height: 90px;
+     animation: movingcloud 40s infinite;
+ }
+ 
+ #cloud2 {
+     background-repeat: no-repeat;
+     position: absolute;
+     width: 200px;
+     height: 60px;
+     animation: movingcloud2 45s infinite;
+ }
+ 
+ @keyframes movingcloud {
+     0% {
+         left: 0;
+         top: 0;
+     }
+     100% {
+         left: 1300px;
+         top: 10px;
+     }
+ }
+ 
+ @keyframes movingcloud2 {
+     0% {
+         left: 0;
+         top: 180px;
+     }
+     100% {
+         left: 1300px;
+         top: 180px;
+     }
+ }
+ 
+ #sun {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     z-index: 1;
+     cursor: pointer;
+ }
+ 
+ @keyframes sunn {
+     0% {
+         transform: rotate(0deg);
+     }
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+
+#stump{
+    width: 120px;
+    height: 120px;
+    top: 485px;
+    left: 260px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+
+
+ /* PAGE TWO: LIVING ROOM */
+ 
+ 
+ .cardbutton {
+     position: absolute;
+     padding: 2pt;
+     font-family: 'Dosis', sans-serif;
+     font-size: 14pt;
+     color: white;
+     background-color: lightpink;
+     border: none;
+ }
+ 
+ .card-toggle {
+     display: none;
+ }
+ 
+ .card {
+     display: block;
+     width: 150px;
+     height: 150px;
+     position: absolute;
+     perspective: 500;
+     top: 310px;
+     left: 940px;
+     cursor: pointer;
+ }
+ 
+ .card:hover .face {
+     transition: all .5s ease-out;
+ }
+ 
+ .face {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     backface-visibility: visible;
+     transition: all 0.5s ease-out;
+     transform-origin: 0 0;
+ }
+ 
+ .front {
+     transform: rotateY(-15deg);
+     z-index: 3;
+     backface-visibility: hidden;
+ }
+ 
+ .inner-left {
+     transform: rotateY(-15deg);
+     z-index: 2;
+ }
+ 
+ .inner-left > img {
+     transform: rotateY(180deg);
+ }
+ 
+ .inner-right {
+     transform: rotateY(0deg);
+     z-index: 1;
+ }
+ 
+ .card:hover .front,
+ .card:hover .inner-left {
+     transform: rotateY(-35deg);
+ }
+ 
+ .card-toggle:checked + .card .front,
+ .card-toggle:checked + .card .inner-left {
+     transform: rotateY(-155deg);
+ }
+ 
+ .card-toggle:checked + .card .inner-right {
+     transform: rotateY(-15deg);
+ }
+ 
+ #lightOn {
+     background-image: url(lighton.svg);
+     background-repeat: no-repeat;
+     width: 300px;
+     height: 300px;
+     position: absolute;
+     top: 0px;
+     left: 480px;
+     cursor: pointer;
+     z-index: 9999;
+ }
+ 
+ #lightOn.clickit {
+     background-image: url(lightoff.svg);
+     background-repeat: no-repeat;
+     width: 300px;
+     height: 300px;
+     position: absolute;
+     top: 0px;
+     left: 480px;
+     cursor: pointer;
+ }
+
+#shade{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index:111;
+    display: block;
+    
+}
+ 
+ 
+ #petals {
+     width: 220px;
+     position: absolute;
+     top: 800px;
+     left: 600px;
+     cursor: pointer;
+     z-index: -1;
+ }
+
+@keyframes shake{
+    
+    0%{
+        transform: translate3d(-5px, 0, 0);
+    }
+    25%{
+        transform: translate3d(5px, 0, 0);
+    }
+    50%{
+        transform: translate3d(-5px, 0, 0);
+    }
+    75%{
+        transform: translate3d(5px, 0, 0);
+    }
+}
+
+
+
+
+#exit{
+    
+    width:100px;
+    height: 100px;
+    top: 265px;
+    left:65px;
+    position: absolute;
+    cursor: pointer;
+    animation: 4s shake infinite;
+}
+
+
+#rug{
+    width: 450px;
+    top: 700px;
+    left: 400px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#rug:hover{
+    animation: .5s shake infinite;
+}
+
+ @keyframes rugmove {
+     0% {
+         left: 600px;
+         top: 800px;
+     }
+     100% {
+         left: 1110px;
+         top: 800px;
+     }
+ }
+
+
+/* PAGE THREE ---- BEDROOM */
+
+#ring1{
+    width: 80px;
+    height: 80px;
+    top: 460px;
+    left: 470px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#ring2{
+    width: 80px;
+    height: 80px;
+    top: 460px;
+    left: 620px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#ring3{
+    width: 80px;
+    height: 80px;
+    top: 460px;
+    left: 770px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#petals2 {
+     width: 220px;
+     height: 200px;
+     position: absolute;
+     top: 800px;
+     left: -20px;
+ }
+ 
+ #petals2:hover {
+      animation: .5s shake infinite;
+     transform: translate3d(0, 0, 0);
+     perspective: 1000px;
+     cursor: pointer;
+ }
+
+
+#pick{
+    position: absolute;
+    display: block;
+    width: 900px;
+    top: 150px;
+    left: 200px;
+}
+
+#yes{
+    position: absolute;
+    display: none;
+    left: 470px;
+    top: 150px;
+    width: 400px;
+    
+}
+
+
+#wrong{
+    position: absolute;
+    display: none;
+    width: 500px;
+    top: 150px;
+    left: 430px;
+    
+}
+
+
+/* PAGE FOUR -- SCHOOL */
+
+.schoolbg{
+    z-index: -1;
+    
+}
+
+#pfact{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 90px;
+    top: 220px;
+    cursor: pointer;
+}
+#nfact{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 1080px;
+    top: 220px;
+    cursor: pointer;
+}
+
+#img {
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 170px;
+        left: 330px;
+        width: 600px;
+        height: 600px;
+        z-index: -1;
+        background-image: url(1.svg);
+    }
+
+#X{
+    top: 20px;
+    left: 20px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+#name{
+    z-index: 1;
+    top: 500px;
+    left: 200px;
+    position: absolute;
+    font-size: 25pt;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Alexis Valentines E-Card</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css" />
+</head>
+
+<body>
+
+    <div id="bg" class="schoolbg"><img src="school.svg"></div>
+    <div id="pfact"><img src="previousfact.svg"></div>
+    <div id="nfact"><img src="nextfact.svg"></div>
+    <div id="img"> </div>
+    <div id="name"></div>
+    <div id="X"><img src="exitschool.svg"></div>
+    
+
+
+
+
+    <script>
+        
+        
+       window.onload = function (){
+        var person = prompt("Please enter your name");
+        if (person != null) {
+        document.getElementById("name").innerHTML =
+        "Hello " + person + ", heres 10 interesting facts about Valentines Day!";
+    }
+}
+        
+    
+        var nfact = document.getElementById("nfact");
+        var img = document.getElementById("img");
+        var num = 1;
+        
+        
+
+        var pfact = document.getElementById("pfact");
+        pfact.addEventListener("click", function () {
+            num--;
+            console.log(num + "PREVIOUS IS CLICKED");
+            if (num == -1) {
+                img.style.backgroundImage = "url(1.svg)";
+                num = 9;
+            } else if (num == 2) {
+                img.style.backgroundImage = "url(2.svg)";
+                num= 2;
+            } else if (num == 3) {
+                img.style.backgroundImage = "url(3.svg)";
+            } else if (num == 4) {
+                img.style.backgroundImage = "url(4.svg)";
+            } else if (num == 5) {
+                img.style.backgroundImage = "url(5.svg)";
+            } else if (num == 6) {
+                img.style.backgroundImage = "url(6.svg)";
+            } else if (num == 7) {
+                img.style.backgroundImage = "url(7.svg)";
+            } else if (num == 1) {
+                img.style.backgroundImage = "url(8.svg)";
+            }  else if (num ==8) {
+                img.style.backgroundImage = "url(9.svg)";
+            }
+                else if (num == 0) {
+                img.style.backgroundImage = "url(10.svg)";
+                num = 0;
+            }
+        });
+    
+    
+        nfact.addEventListener("click", function () {
+            num++;
+            console.log(num + "NEXT IS CLICKED");
+            if (num == 1) {
+                img.style.backgroundImage = "url(1.svg)";
+            } else if (num == 2) {
+                img.style.backgroundImage = "url(2.svg)";
+            } else if (num == 3) {
+                img.style.backgroundImage = "url(3.svg)";
+            } else if (num == 4) {
+                img.style.backgroundImage = "url(4.svg)";
+            } else if (num == 5) {
+                img.style.backgroundImage = "url(5.svg)";
+            } else if (num == 6) {
+                img.style.backgroundImage = "url(6.svg)";
+            } else if (num == 7) {
+                img.style.backgroundImage = "url(7.svg)";
+            } else if (num == 8) {
+                img.style.backgroundImage = "url(8.svg)";
+            } else if (num == 9) {
+                img.style.backgroundImage = "url(9.svg)";
+            }
+            else if (num == 10) {
+                img.style.backgroundImage = "url(10.svg)";
+                num = 0;
+            }
+        });
+        
+        var exit = document.getElementById("X")
+        
+        exit.addEventListener("click",function(){
+            window.open("index.html","_self");
+        })
+
+    </script>
+
+</body>
+
+</html>

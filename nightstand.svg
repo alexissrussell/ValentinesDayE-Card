@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 266.5 343" style="enable-background:new 0 0 266.5 343;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#6C86CC;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:url(#SVGID_1_);stroke:#020202;stroke-miterlimit:10;}
+	.st2{fill:#A5B3CE;stroke:#020202;stroke-miterlimit:10;}
+	.st3{fill:#FFAEFF;stroke:#020202;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#020202;stroke-miterlimit:10;}
+	.st5{fill:#FFC9FF;stroke:#020202;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M14.7,0.5h236.6c8.1,0,14.7,6.6,14.7,14.7v88.3H0.5V14.7C0.5,6.8,6.9,0.5,14.7,0.5z"/>
+<rect x="12.5" y="10" class="st0" width="242.5" height="83"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="81.2581" y1="52" x2="185.2581" y2="52">
+	<stop  offset="0" style="stop-color:#FDFCFB"/>
+	<stop  offset="0.5407" style="stop-color:#788DB6"/>
+	<stop  offset="1" style="stop-color:#FDFCFB"/>
+</linearGradient>
+<rect x="81.3" y="49" class="st1" width="104" height="6"/>
+<polygon class="st0" points="0.5,103.5 0,259 266,259 266,103.5 255,103.5 255,245 12.5,245 12.5,103.5 "/>
+<polygon class="st2" points="23.5,205 23.5,103.5 222,103.5 222,210.5 23.5,210.5 "/>
+<polygon class="st0" points="0,259 0,342.5 8.8,342.5 8.5,266.1 257.5,266 257.5,342.5 266,342.5 266,259 "/>
+<polygon class="st0" points="125.5,278 8.7,308 8.7,301.8 113.4,274.5 56,266.4 90,266.3 125.5,271 159.7,266.2 187.3,266.1 
+	131,274.1 257.5,297 257.5,303.2 "/>
+<path class="st2" d="M222,103.5h33v140.8c0,0.3-0.3,0.4-0.5,0.2l-32.5-34V103.5z"/>
+<path class="st2" d="M12.5,103.5h11v107l-10.7,33.6c0,0.2-0.3,0.1-0.3,0V103.5z"/>
+<polygon class="st2" points="12.5,244.1 23.5,210.5 222,210.5 254.5,244.5 "/>
+<path class="st3" d="M46.8,165.8l-10.3,12.9c-0.1,0.1,0,0.3,0.2,0.3l96.3,2.2l-3-13.8L46.8,165.8z"/>
+<path class="st3" d="M37.8,198.2c0,0-5.1-4-1.5-19.2l96.7,2.2l3.3,19L37.8,198.2z"/>
+<path class="st4" d="M40,179.2c0,0-4,8.1,0,19"/>
+<path class="st4" d="M46,179.2c0,0-5,9.1,0,19.2"/>
+<path class="st4" d="M78.5,180c0,0-3.2,10.4,0,19.1"/>
+<path class="st4" d="M84.6,180.1c0,0-5.1,7.8,0,19.1"/>
+<path class="st4" d="M124.3,181c0,0-2,14.8,1.2,19"/>
+<path class="st4" d="M130,181c0,0-4.5,4.5,0,19.2"/>
+<path class="st5" d="M125.5,140.7l13.7-7.7l0.7,2.4l12.6-0.9l-8.4,5.1C144.1,139.6,130.9,143.8,125.5,140.7z"/>
+<path class="st3" d="M142.8,239l-17.2-98.3c0,0,5.2,3.1,18.6-1l17.6,98C161.8,237.6,151.3,242.1,142.8,239z"/>
+<path class="st5" d="M162.8,138c0,0-12,4.1-18.6,1.6l14-8l-0.1,2.2l12.2-0.9L162.8,138z"/>
+<path class="st3" d="M180,236.5c0,0-10.6,4.5-18.2,1.1l-17.6-98c0,0,6.5,2.6,18.6-1.6L180,236.5z"/>
+<path class="st3" d="M182.3,136.6c0,0-13,4.8-19.5,1.4l17.2,98.5c0,0,10.2,4.2,19.5-2.4L182.3,136.6z"/>
+<path class="st5" d="M177.3,130l-14.6,8c0,0,7.9,3.4,19.5-1.4l12.6-7.7l-6.7,2.7h-10.8V130z"/>
+<polygon class="st3" points="199.5,234.1 211.3,222 194.8,128.9 182.3,136.6 "/>
+<line class="st4" x1="177.3" y1="131.6" x2="165.6" y2="138.8"/>
+<line class="st4" x1="180" y1="131.6" x2="169.2" y2="139.2"/>
+<line class="st4" x1="184.1" y1="131.6" x2="173.2" y2="139.2"/>
+<line class="st4" x1="187.5" y1="131.6" x2="180.1" y2="137.4"/>
+<line class="st4" x1="158" y1="133.9" x2="147.5" y2="140.4"/>
+<line class="st4" x1="161.1" y1="133.7" x2="151.5" y2="140.4"/>
+<line class="st4" x1="165.6" y1="133.3" x2="156.5" y2="139.6"/>
+<line class="st5" x1="139.9" y1="135.4" x2="128.8" y2="141.6"/>
+<line class="st5" x1="132.3" y1="141.8" x2="144.1" y2="135.2"/>
+<line class="st5" x1="148.4" y1="134.8" x2="139.9" y2="140.8"/>
+<path class="st3" d="M37.5,217.7c0,0-5.7-12.5,0.2-19.4l98.5,2c0,0-1.6,17,0.9,19.1L37.5,217.7z"/>
+<path class="st3" d="M37.5,236.4c0,0-5.7-12.5,0.2-19.4l98.5,2c0,0-1.6,17,0.9,19.1L37.5,236.4z"/>
+<path class="st4" d="M46,198.4c0,0-5.6,8.6-0.6,18.7"/>
+<path class="st4" d="M40,198.4c0,0-4,8.1,0,19"/>
+<path class="st4" d="M45.4,217.1c0,0-5,9.1,0,19.2"/>
+<path class="st4" d="M39.7,216.7c0,0-3.7,8.9,0.3,19.9"/>
+<path class="st4" d="M83.5,218c0,0-5,9.1,0,19.2"/>
+<path class="st4" d="M77.8,217.5c0,0-3.7,8.9,0.3,19.9"/>
+<path class="st4" d="M130,218.6c0,0-5,9.1,0,19.2"/>
+<path class="st4" d="M124.3,218.1c0,0-3.7,8.9,0.3,19.9"/>
+<path class="st4" d="M130.9,200.4c0,0-5.9,8-0.9,18.1"/>
+<path class="st4" d="M125.2,200c0,0-5.2,7.6-1.2,18.6"/>
+<path class="st4" d="M84.3,199.3c0,0-6.1,8.2-1.1,18.3"/>
+<path class="st4" d="M78.6,198.8c0,0-4.9,7.7-0.9,18.7"/>
+<path class="st5" d="M137.2,238l4.6-4.7l-2.5-14l-3.1-19.1c0,0-1.2,19.1,0.9,19.1C137.2,219.3,135,231.8,137.2,238z"/>
+<line class="st4" x1="137.2" y1="219.3" x2="138.8" y2="218.1"/>
+<line class="st4" x1="136.5" y1="224.6" x2="140" y2="223.1"/>
+<line class="st4" x1="135.9" y1="229.4" x2="140.6" y2="226.7"/>
+<line class="st4" x1="135.5" y1="232" x2="141.1" y2="229.4"/>
+<line class="st4" x1="136.3" y1="234.1" x2="141.3" y2="231.4"/>
+<line class="st4" x1="135.9" y1="215.9" x2="138.7" y2="215.2"/>
+<line class="st3" x1="135.5" y1="212.6" x2="138.2" y2="212.6"/>
+</svg>

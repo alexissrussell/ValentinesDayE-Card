@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Alexis Valentines E-Card</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css" />
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+       
+</head>
+
+<body>
+
+    <div id="bg"> <img src="bg.svg"> </div>
+
+    <div id="heart"> <img src="heart.svg"> </div>
+    <div id="bear"> <img src="bear.svg"> </div>
+
+
+    <div id="heart1"> <img src="heart1.svg"> </div>
+    <div id="rose"><img src="rose.svg"></div>
+
+    <div id="heart2"> <img src="heart2.svg"> </div>
+    <div id="dog"><img src="dog.svg"></div>
+
+    <div id="heart3"> <img src="heart3.svg"> </div>
+    <div id="choco"><img src="chocolates.svg"></div>
+
+
+    <div id="sun"> <img src="sun.svg"></div>
+    <div id="cloud"> <img src="cloud.svg"></div>
+    <div id="cloud2"> <img src="cloud2.svg"></div>
+    <div id="stump"><img src="factstump.svg"></div>
+    <div id="house"><img src="house.svg"></div>
+    <div id="hint">HINTS</div>
+    <div id="bird"><img src="bird.svg"></div>
+    <audio id="sounds"></audio>
+
+    <script>
+        
+        
+        $(function () {
+            $("#heart").draggable();
+            $("#heart1").draggable();
+            $("#heart2").draggable();
+            $("#heart3").draggable();
+            $("#bear").draggable();
+            $("#rose").draggable();
+            $("#dog").draggable();
+            $("#choco").draggable();
+        });
+
+        
+        var hint = document.getElementById("hint")
+        var num = 0;
+        
+        hint.addEventListener("click", function(){
+            num++;
+            console.log("hint was clicked");
+            if (num == 1){
+            alert ("Try clicking the hearts AND move them!");    
+            } else if (num == 2){
+            alert ("Try clicking the sun!");
+            } else if (num == 3){
+            alert ("Try clicking the bird in the tree!")
+            } else if (num == 4){
+            alert ("Go check out that fact stump!")
+            } else if (num == 5){
+            alert ("Go find the secret bedroom!");
+            }else if (num == 6){
+            alert ("Sad days, your out of hints! Just go explore...");
+            num = 0;
+            }
+        });
+        
+        
+        var bird = document.getElementById("bird")
+        var birdchirp = "bird.mp3"
+        
+        bird.addEventListener("click", function(){
+            console.log ("bird was clicked");
+            bird.style.animation = "birdmove 2s forwards";
+            sounds.src = birdchirp;
+            sounds.play();
+            
+        });
+        
+
+        var heart = document.getElementById("heart")
+
+        heart.addEventListener("click", function () {
+            console.log("heart was clicked");
+            bear.style.display = "block";
+
+
+        });
+
+
+
+        var heart1 = document.getElementById("heart1")
+
+        heart1.addEventListener("click", function (event) {
+            console.log("heart1 was clicked");
+            rose.style.display = "block";
+
+        });
+
+
+
+        var heart2 = document.getElementById("heart2")
+        var dog = document.getElementById("dog")
+
+        var sounds = document.getElementById("sounds")
+        var dogbark = "dogsqueak.mp3"
+
+        heart2.addEventListener("click", function () {
+            console.log("heart2 was clicked");
+            dog.style.display = "block";
+
+        });
+
+        dog.addEventListener("mouseover", function () {
+            console.log("dog bark");
+            sounds.src = dogbark;
+            sounds.play();
+        });
+
+
+        var heart3 = document.getElementById("heart3")
+
+        heart3.addEventListener("click", function () {
+            console.log("heart3 was clicked");
+            choco.style.display = "block";
+
+        });
+
+
+        var house = document.getElementById("house")
+
+        house.addEventListener("click", function () {
+            console.log("enter living room");
+            window.open("livingroom.html","_self");
+        });
+
+        var stump = document.getElementById("stump")
+
+        stump.addEventListener("click", function () {
+            console.log("enter school");
+            window.open("school.html","_self");
+        })
+
+        var sunmove = document.getElementById("sun")
+
+        sunmove.addEventListener("click", function () {
+            console.log("sun moving");
+            sunmove.style.animation = "sunn 10s linear infinite";
+        })
+    </script>
+</body>
+
+</html>

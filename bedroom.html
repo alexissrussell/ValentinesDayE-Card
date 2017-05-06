@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Alexis Valentines E-Card</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css" />
+</head>
+
+<body>
+
+
+
+
+    <div id="bg"> <img src="bedroom.svg"> </div>
+    <div id="petals2"><img src="petals.svg"></div>
+    <div id="ring1"> <img src="ring1.svg"> </div>
+    <div id="ring2"> <img src="ring3.svg"> </div>
+    <div id="ring3"> <img src="ring2.svg"> </div>
+    <div id="pick"><img src="pick.svg"></div>
+    <div id="yes"><img src="yes.svg"></div>
+    <div id="wrong"><img src="wrong.svg"></div>
+    <audio id="sounds"></audio>
+
+    <script>
+        var petal2 = document.getElementById("petals2")
+
+        petal2.addEventListener("click", function () {
+            console.log("petals clicked on");
+            window.open("livingroom.html","_self");
+        });
+
+
+        var sounds = document.getElementById("sounds")
+        var correct = "yessparkle.mp3";
+        var incorrect = "Incorrect.mp3";
+        
+        var ring1 = document.getElementById("ring1")
+        var ring2 = document.getElementById("ring2")
+        var ring3 = document.getElementById("ring3")
+
+        var winner = Math.round(Math.random()*3)+1 
+
+
+        ring1.addEventListener("click", function () {
+            console.log("ring one was clicked")
+
+            if (winner == 1) {
+                yes.style.display = "block";
+                pick.style.display = "none";
+                wrong.style.display = "none";
+                sounds.src = correct;
+                sounds.play();
+            }
+            
+            else if (winner == 2){
+                pick.style.display = "none";
+                wrong.style.display = "block";
+                yes.style.display = "none";
+                sounds.src = incorrect;
+                sounds.play();
+            }
+             else if (winner == 3){
+                pick.style.display = "none";
+                wrong.style.display = "block";
+                yes.style.display = "none";
+                sounds.src = incorrect;
+                sounds.play();
+            }
+            
+        });
+
+
+        ring2.addEventListener("click", function () {
+            console.log("ring two was clicked")
+
+            if (winner == 2) {
+                yes.style.display = "block";
+                pick.style.display = "none";
+                wrong.style.display = "none";
+                sounds.src = correct;
+                sounds.play();
+            }
+            
+            
+            else if (winner == 1) {
+                pick.style.display = "none";
+                wrong.style.display = "block";
+                yes.style.display = "none";
+                sounds.src = incorrect;
+                sounds.play();
+              
+            }
+            else if  (winner == 3) {
+                
+                pick.style.display = "none";
+                wrong.style.display = "block";
+                yes.style.display = "none";
+                sounds.src = incorrect;
+                sounds.play();
+    
+            }
+        });
+
+
+        ring3.addEventListener("click", function () {
+            console.log("ring three was clicked")
+            
+            if (winner == 3) {
+                yes.style.display = "block";
+                pick.style.display = "none";
+                wrong.style.display = "none";
+                sounds.src = correct;
+                sounds.play();
+            }
+            
+            else if (winner == 1) {
+                pick.style.display = "none";
+                wrong.style.display = "block";
+                yes.style.display = "none";
+                sounds.src = incorrect;
+                sounds.play();
+
+                
+            }
+            else if  (winner == 2) {
+                pick.style.display = "none";
+                wrong.style.display = "block";
+                yes.style.display = "none";
+                sounds.src = incorrect;
+                sounds.play();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
